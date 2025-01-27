@@ -19,9 +19,10 @@ body {
 }
 
 .sidebar__navigation {
+    color: white;
     background-color: rgb(16, 171, 223);
     border-radius: 8px;
-    padding: 16px 0 0 16px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
 }
@@ -45,4 +46,47 @@ body {
 .sidebar__navigation ul li .fa {
     font-size: 20px;
     margin-right: 7px;
+}
+
+.biblioteca {
+    margin-top: 20px;
+}
+
+.biblioteca__detalhes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.biblioteca__detalhes__icon {
+    display: flex;
+    gap: 10px;
+    font-size: 17px;
+}
+
+.primeira-playlist {
+    margin-top: 20px;
+    background-color: rgb(125, 196, 220);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.create-playlist {
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    width: fit-content;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.biblioteca .configs {
+    margin-top: 30px;
+} 
+
+.biblioteca .configs .languages {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
 }
