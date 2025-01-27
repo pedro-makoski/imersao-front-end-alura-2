@@ -20,7 +20,7 @@ body {
 
 .sidebar__navigation {
     color: white;
-    background-color: rgb(16, 171, 223);
+    background-color: rgb(13, 94, 121);
     border-radius: 8px;
     padding: 16px;
     display: flex;
@@ -65,7 +65,7 @@ body {
 
 .primeira-playlist {
     margin-top: 20px;
-    background-color: rgb(125, 196, 220);
+    background-color: rgb(3, 117, 155);
     padding: 20px;
     border-radius: 8px;
 }
