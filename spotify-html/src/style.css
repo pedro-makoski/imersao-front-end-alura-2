@@ -90,3 +90,9 @@ body {
     padding: 10px;
     border-radius: 10px;
 }
+
+#addlibrary {
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+}
