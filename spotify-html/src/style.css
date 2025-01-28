@@ -209,6 +209,7 @@ body {
 footer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     width: calc(100vw - 20px*2);
