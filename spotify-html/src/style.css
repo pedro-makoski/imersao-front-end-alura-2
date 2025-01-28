@@ -19,7 +19,7 @@ body {
     top: 0;
     left: 0;
     padding: 12px;
-    width: 300px    ;
+    width: 300px;
 }
 
 .sidebar__navigation {
@@ -32,19 +32,27 @@ body {
 }
 
 .sidebar__navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     margin-top: 20px;
     padding-bottom: 10px;
 }
 
-.sidebar__navigation ul li {
-    padding: 10px 0;
-}
-
 .sidebar__navigation ul li a{
+    display: block;
     color:var(--contrast-color);
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
+    border-radius: 20px;
+    outline: 0 solid var(--secondary-color);
+    padding: 10px;
+}
+
+.sidebar__navigation ul li a:hover {
+    outline-width: 3px;
+    transition: .05s;
 }
 
 .sidebar__navigation ul li .fa {
@@ -74,7 +82,14 @@ body {
     border-radius: 8px;
 }
 
+.primeira-playlist div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
 .create-playlist {
+    position: relative;
     display: block;
     text-decoration: none;
     color: var(--contrast-of-contrast-color);
@@ -83,17 +98,37 @@ body {
     width: fit-content;
     margin-top: 20px;
     border-radius: 10px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
-.biblioteca .configs {
-    margin-top: 30px;
-} 
-
-.biblioteca .configs .languages {
-    margin-top: 30px;
-    padding: 10px;
+.create-playlist::before {
+    content: "";
+    display: block;
+    background-color: var(--primary-color);
+    width:0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
     border-radius: 10px;
+    transition: .2s;
+}
+
+.create-playlist:hover::before {
+    width: 100%;
+    transition: .2s;
+}
+
+.create-playlist span {
+    position: relative;
+    z-index: 1000;
+    transition: .2s;
+}
+
+.create-playlist:hover span {
+    color: var(--contrast-color);
+    transition: .2s;
 }
 
 #addlibrary {
@@ -102,12 +137,68 @@ body {
     font-size: 14px;
 }
 
+.biblioteca .configs {
+    margin-top: 30px;
+} 
+
 .cookies {
+    width: fit-content;
     text-decoration: none;
     color: var(--contrast-color);
     display: block;
+    position: relative;
 }
 
-.cookies:hover {
-    text-decoration: underline;
+.cookies::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    display:block;
+    background-color: var(--contrast-color);
+    transition: .2s;
+}
+
+.cookies:hover::before {
+    width: 100%;
+    transition: .2s;
+}
+
+.biblioteca .configs .languages {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.biblioteca .configs .languages::before {
+    content: "";
+    display: block;
+    background-color: var(--secondary-color);
+    width:0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.biblioteca .configs .languages:hover::before {
+    width: 100%;
+    transition: .2s;
+}
+
+.biblioteca .configs .languages span {
+    position: relative;
+    z-index: 1000;
+    transition: .2s;
+}
+
+.biblioteca .configs .languages:hover span {
+    color: var(--contrast-color);
+    transition: .2s;
 }
