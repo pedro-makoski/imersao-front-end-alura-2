@@ -65,6 +65,8 @@ body {
 }
 
 .biblioteca__detalhes {
+    height: 50px;
+    align-items: center;
     display: flex;
     justify-content: space-between;
 }
