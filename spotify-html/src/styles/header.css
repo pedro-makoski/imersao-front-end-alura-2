@@ -97,6 +97,10 @@ main {
     padding: 15px 25px;
 }
 
+.nav__login .subscribe:hover {
+    color: var(--contrast-color);
+}
+
 .nav__login .login {
     width: fit-content;
     height: fit-content;
@@ -107,4 +111,11 @@ main {
     font-size: 16px;
     font-weight: 700;
     background-color: var(--contrast-color);
+    transform: scale(1);
+    transition: .2s;
+}
+
+.nav__login .login:hover {
+    transform: scale(1.1);
+    transition: .2s;
 }
