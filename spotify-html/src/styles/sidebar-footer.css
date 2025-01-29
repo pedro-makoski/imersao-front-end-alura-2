@@ -1,26 +1,23 @@
-:root {
-    --primary-color: rgb(13, 94, 121);
-    --secondary-color: rgb(3, 117, 155);
-    --contrast-color: white; 
-    --contrast-of-contrast-color: black; 
-
-    --main-font: "DM Sans", sans-serif 
-}
-
 body {
     position: relative;
-    width: 100vw;
     height: 100vh;
     background-image: linear-gradient(45deg, lightblue, var(--secondary-color));
     font-family: var(--main-font);
 }
 
 .sidebar {
+    height: 100vh;
+    overflow: auto;
     position: fixed;
     top: 0;
     left: 0;
     padding: 12px;
     width: 300px;
+    padding-bottom: 20px;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 .sidebar__navigation {
@@ -62,7 +59,7 @@ body {
 }
 
 .biblioteca {
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .biblioteca__detalhes {
@@ -78,8 +75,8 @@ body {
     font-size: 17px;
 }
 
-.primeira-playlist {
-    margin-top: 20px;
+.primeira-playlist, .primeiro-podcast{
+    margin-top: 10px;
     background-color: var(--secondary-color);
     padding: 20px;
     border-radius: 8px;
@@ -91,7 +88,7 @@ body {
     gap: 3px;
 }
 
-.create-playlist {
+.create-playlist, .create-podcast{
     position: relative;
     display: block;
     text-decoration: none;
@@ -104,7 +101,7 @@ body {
     font-weight: 500;
 }
 
-.create-playlist::before {
+.create-playlist::before, .create-podcast::before{
     content: "";
     display: block;
     background-color: var(--primary-color);
@@ -118,18 +115,18 @@ body {
     transition: .2s;
 }
 
-.create-playlist:hover::before {
+.create-playlist:hover::before, .create-podcast:hover::before {
     width: 100%;
     transition: .2s;
 }
 
-.create-playlist span {
+.create-playlist span, .create-podcast span {
     position: relative;
     z-index: 1000;
     transition: .2s;
 }
 
-.create-playlist:hover span {
+.create-playlist:hover span, .create-podcast:hover span {
     color: var(--contrast-color);
     transition: .2s;
 }
