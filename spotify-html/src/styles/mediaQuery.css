@@ -50,4 +50,13 @@
     .search-bar nav {
         justify-content: center;
     }
+
+    
+    .search-bar__navigation-and-search {
+        justify-content: center;
+    }
+
+    .nav__search input {
+        width: calc(100vw - 120px)
+    }
 }

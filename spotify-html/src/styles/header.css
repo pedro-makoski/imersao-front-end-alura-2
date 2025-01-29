@@ -20,6 +20,7 @@ main {
 
 .search-bar__navigation-and-search {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
 }
@@ -66,7 +67,7 @@ main {
 }
 
 .nav__search input {
-    width: 200px;
+    width: 250px;
     border: none;
     background-color: transparent;
     padding: 5px 12px;
@@ -83,6 +84,8 @@ main {
 
 .nav__login {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 10px;
 }
