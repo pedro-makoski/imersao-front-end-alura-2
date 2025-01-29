@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/vars.css">
     <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/content.css">
     <link rel="shortcut icon" href="./src/assets/icons/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
         integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
@@ -14,7 +16,7 @@
         integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
 </head>
 <body>
-    <div class="sidebar">
+    <header class="sidebar">
         <nav class="sidebar__navigation">
             <div>
                 <a href="">
@@ -62,7 +64,33 @@
                 </button>
             </div>
         </div>
-    </div>
+    </header>
+    <main>
+        <section class="search-bar">
+            <nav>
+                <div class="search-bar__navigation-and-search">
+                    <div class="navigation">
+                        <button class="arrow-left"><img src="./src/assets/icons/small-left.png" alt="Voltar página"></button>
+                        <button class="arrow-left"><img src="./src/assets/icons/small-right.png" alt="Próxima página"></button>
+                    </div>
+                    <div class="nav__search">
+                        <img src="./src/assets/icons/search.png" alt="">
+                        <input type="text" id="search-input" name="search-input" maxlength="800" placeholder="O que você quer ouvir?" >
+                    </div>
+                </div>
+                <div class="nav__login">
+                    <a href="" class="subscribe">Inscreva-se</a>
+                    <a href="" class="login">Entrar</a>
+                </div>
+            </nav>
+        </section>
+        <section class="content">
+            <div class="saudacao">
+                <h1 class="saudacao-change-by-time">Boa tarde</h1>
+                <p>Navegar por todas as seções</p>
+            </div>
+        </section>
+    </main>
     <footer>
         <div>
             <h1>Testar o Premium de graça</h1>
@@ -71,5 +99,6 @@
         <a href="" rel="next" class="footer__button"><span>Inscreva-se gratis</span></a>
     </footer>
     <script src="./src/scripts/footer-gone.js"></script>
+    <script src="./src/scripts/change-by-time.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
     --primary-color: rgb(13, 94, 121);
     --secondary-color: rgb(3, 117, 155);
     --contrast-color: white; 
+    --contrast-color-mais-fraca: rgb(223, 223, 223); 
     --contrast-of-contrast-color: black; 
 
     --main-font: "DM Sans", sans-serif 
