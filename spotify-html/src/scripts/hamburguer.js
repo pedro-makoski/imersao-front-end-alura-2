@@ -49,7 +49,9 @@ document.addEventListener("click", (e) => {
 })
 
 window.addEventListener("resize", () => {
-    if(verificateIsPossibleOpen(menu, CLASS_APPEAR)) {
-        openByHamburguer(menu, OLD_TO_NEW_LIST_CLASS, CLASS_APPEAR, hamburguerSpan, EXIT_STRING)
-    } 
+    if (window.innerHTML > MAX_WIDTH_HAMBURGUER) {
+        if(verificateIsPossibleOpen(menu, CLASS_APPEAR)) {
+            openByHamburguer(menu, OLD_TO_NEW_LIST_CLASS, CLASS_APPEAR, hamburguerSpan, EXIT_STRING)
+        }     
+    }    
 })
