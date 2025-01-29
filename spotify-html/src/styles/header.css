@@ -9,6 +9,8 @@ main {
 .search-bar nav {
     width: calc(100% - 16px*2);
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-between;
     align-items: center; 
     padding: 16px;

@@ -1,0 +1,53 @@
+.hamburguer {
+    display: flex;
+    transform: translateX(-100%);
+    margin-right: 20px;
+    position: fixed;
+    color: var(--primary-color);
+    font-size: 2em;
+    z-index: 5;
+    user-select: none;
+    width: 50px;
+    height: 50px;
+    right: 0px;
+    display: none;
+    background-color: var(--contrast-color-mais-fraca);
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburguer:hover {
+    background-color: var(--contrast-color);
+}
+
+.hamburguer span.fa-x {
+    font-family: var(--font-main);
+}
+
+@media screen and (max-width: 1058px){
+    .hamburguer {
+        display: flex;
+    }   
+
+    .sidebar {
+        z-index: 4;
+        transform: translateX(-100%);
+        transition: .2s;
+    }
+
+    .sidebar.appear {
+        transform: translateX(0);
+        transition: .2s;
+    }
+
+    main {
+        max-width: calc(100vw - 30px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .search-bar nav {
+        justify-content: center;
+    }
+}
