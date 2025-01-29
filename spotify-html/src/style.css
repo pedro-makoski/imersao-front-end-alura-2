@@ -135,9 +135,19 @@ body {
 }
 
 #addlibrary {
+    padding: 10px;
     background-color: transparent;
     color: var(--contrast-color);
     font-size: 14px;
+    width: fit-content;
+    height: fit-content;
+    transform: rotate(0deg);
+    transition: .1s;
+}
+
+#addlibrary:hover {
+    transform: rotate(360deg);
+    transition: .1s;
 }
 
 .biblioteca .configs {
