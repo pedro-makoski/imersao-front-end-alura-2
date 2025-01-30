@@ -10,7 +10,7 @@ if(hour >= 12 && hour < 19) {
     saudacao = "Boa tarde"
 }
 
-if(hour >= 19) {
+if(hour >= 18) {
     saudacao = "Boa noite"
 }
 

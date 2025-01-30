@@ -1,5 +1,5 @@
 .content {
-    height: calc(100% - 30px*2 - 20px - 20px);
+    height: calc(100% - 80px - 10px);
     border-radius: 8px;
     background-color: var(--primary-color);   
     display: flex;
@@ -18,7 +18,6 @@
     color: var(--contrast-color);
 }
 
-
 .saudacao p {
     font-size: 1.5em;
     font-weight: bold;
@@ -27,12 +26,17 @@
 
 .content .cards {
     padding: 20px;
-    height: 100%;
     overflow: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     grid-template-rows: repeat(auto-fill, 210px);
     gap: 20px;
+}
+
+.content .artists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .content .cards::-webkit-scrollbar {
@@ -101,20 +105,31 @@
 }
 
 
-.content .cards .card img {
-    width: 100px;
-    height: 100px;
+.content .cards .card:not(.artist) div img {
     position: absolute;
     right: -30px;
     bottom: 0;
     transform: rotate(15deg);
 }   
 
+.content .cards .card div img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.content .cards .artist div img {
+    border-radius: 200px;
+    width: 150px;
+    height: 150px;
+}
+
 .content .cards .card h2 {
     font-size: 1.5em;
 }
 
-.content .cards .card div:has(.fa-play) {
+.content .cards .card .player {
+    width: fit-content;
     position: absolute;
     margin-right: 30px;
     right: 0;
@@ -125,9 +140,60 @@
     background-color: var(--primary-color);
     padding: 20px;
     border-radius: 20px;
+    opacity: 0;
+    transition: .2s;
 }
 
-.content .cards .card:hover div:has(.fa-play) {
+.content .cards .artist .player {
+   margin-right: 0;
+}
+
+.content .cards .card:hover .player{
     transform: translateY(-30px);
+    opacity: 1;
     transition: .2s;
+}
+
+.content .cards .artist:hover .player {
+    transform: translateY(-5px);
+}
+
+.content .cards .artist h2 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+
+.content .cards .artist p {
+    font-size: 0.9em;
+}
+
+.content .cards .artist {
+    width: 100%;
+    height: 250px;
+    max-width: 210px;
+}
+.content .cards .artist a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 200px;
+}
+
+.artist:hover {
+    background-color: var(--secondary-color);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.artist__visual {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
