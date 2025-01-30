@@ -57,6 +57,14 @@
     }
 
     .nav__search input {
-        width: calc(100vw - 120px)
+        width: calc(90vw - 120px)
+    }
+
+    main {
+        overflow: auto;
+    }
+
+    main::-webkit-scrollbar {
+        display: none;
     }
 }
