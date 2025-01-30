@@ -40,11 +40,22 @@ function displayResults(jsons) {
     cardsArtists.innerHTML = resultString
 } 
 
+function displayError() {
+    cardsPlaylist.classList.add(HIDDEN_CLASS)
+    cardsArtists.classList.remove(HIDDEN_CLASS)
+    cardsArtists.innerHTML = '<p style="margin:auto">Ops!! alguma coisa deu errado</p>'
+}
+
 function requestApi(searchTerm) {
     const url = `http://localhost:3000/artists?name_like=${searchTerm}`
-    fetch(url)
-        .then((response) => response.json())
-        .then((result) => displayResults(result))
+    try {
+        fetch(url)
+            .then((response) => response.json())
+            .then((result) => displayResults(result))
+            .catch(() => displayError())
+    }catch(e) {
+        displayError()
+    }
 }
 
 const HIDDEN_CLASS = "hidden"
