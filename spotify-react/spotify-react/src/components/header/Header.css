@@ -1,0 +1,119 @@
+.search-bar nav {
+    width: calc(100% - 16px*2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 16px;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    height: fit-content;
+}
+
+.search-bar__navigation-and-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.arrow-left, .arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    border: none;
+    transform: scale(1);
+    transition: .2s;
+}
+
+
+.arrow-left:hover, .arrow-right:hover {
+    transform: scale(1.24);
+    transition: .2s;
+} 
+
+.nav__search {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    height: calc(32px - 10px - 1px);
+    border: 1px solid transparent;
+    padding: 10px 20px;
+} 
+
+.nav__search img {
+    width: 16px;
+    height: 16px;
+}
+
+.nav__search input {
+    width: 250px;
+    border: none;
+    background-color: transparent;
+    padding: 5px 12px;
+    color: var(--contrast-color);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+}
+
+.nav__search input::placeholder {
+    color: var( --contrast-color-mais-fraca);
+}
+
+.nav__login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav__login .subscribe{
+    height: fit-content;
+    width: fit-content;
+    color: var(--contrast-color-mais-fraca);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 25px;
+}
+
+.nav__login .subscribe:hover {
+    color: var(--contrast-color);
+}
+
+.nav__login .login {
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 25px;
+    border-radius: 12px;
+    color: var(--contrast-of-contrast-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--contrast-color);
+    transform: scale(1);
+    transition: .2s;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.190);
+}
+
+.nav__login .login:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}

@@ -1,0 +1,30 @@
+{
+    "artists": [
+      { "id": 1, "name": "Foo Fighters", "genre": "Rock", "urlImg": "https://i.scdn.co/image/ab67616100005174c884df599abc793c116cdf15" },
+      { "id": 2, "name": "Michael Jackson", "genre": "Pop", "urlImg": "https://i.scdn.co/image/ab676161000051740e08ea2c4d6789fbf5cbe0aa" },
+      { "id": 3, "name": "Emicida", "genre": "Hip Hop", "urlImg": "https://i.scdn.co/image/ab67616100005174908b4b4bc90e1518b68b4068" },
+      { "id": 4, "name": "Chitãozinho e Xororó", "genre": "Sertanejo", "urlImg": "https://i.scdn.co/image/ab676161000051744606c59411c57f7b49588be4" },
+      { "id": 5, "name": "Mc Coringa", "genre": "Funk", "urlImg": "https://i.scdn.co/image/ab67616d00001e02fe8f6dd361ad0f12b88c7f56" },
+      { "id": 6, "name": "Arlindo Cruz", "genre": "Samba", "urlImg": "https://i.scdn.co/image/ab67616100005174181873f93056642d7b340839" },
+      { "id": 7, "name": "Caetano Veloso", "genre": "MPB", "urlImg": "https://i.scdn.co/image/ab67616100005174e98de50f36cf1aa4bf047757"},
+      { "id": 8, "name": "Europe", "genre": "Rock", "urlImg": "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO4A15C0-default.jpg"}
+    ],
+    "playlists":[
+      {"id": 1, "name": "Boas festas", "img": "1.jpeg", "color":"rgb(162, 34, 34)"},
+      {"id": 2, "name": "Feitos para você", "img": "2.png","color":"rgb(0, 73, 106)"},
+      {"id": 3, "name": "Lançamentos", "img": "3.jpeg", "color":"rgb(0, 0, 160)"},
+      {"id": 4, "name": "Creators", "img": "4.jpeg", "color":"rgb(0, 0, 160)"},
+      {"id": 5, "name": "Para treinar", "img": "5.jpeg", "color":"rgb(45, 66, 98)"},
+      {"id": 6, "name": "Podcasts", "img": "6.jpeg", "color":"rgb(83, 37, 37)"},
+      {"id": 7, "name": "Sertanejo", "img": "7.jpeg", "color":"rgb(92, 0, 205)"},
+      {"id": 8, "name": "Samba e pagode", "img": "8.jpeg", "color":"rgb(59, 0, 0)"},
+      {"id": 9, "name": "Funk", "img": "9.jpeg", "color":"rgb(47, 111, 66)"},
+      {"id": 10, "name": "MPB", "img": "10.jpeg", "color":"rgb(170, 170, 41)"},
+      {"id": 11, "name": "Rock", "img": "11.jpeg", "color":"rgb(115, 115, 115)"},
+      {"id": 12, "name": "HipHop", "img": "12.jpeg", "color":"rgb(41, 41, 41)"},
+      {"id": 13, "name": "Indie", "img": "13.jpeg", "color":"rgb(179, 0, 90)"},
+      {"id": 14, "name": "Relax", "img": "14.jpeg", "color":"rgb(73, 109, 121)"},
+      {"id": 15, "name": "Musica látina", "img": "15.jpeg", "color":"rgb(73, 16, 247)"}
+    ]
+}
+  

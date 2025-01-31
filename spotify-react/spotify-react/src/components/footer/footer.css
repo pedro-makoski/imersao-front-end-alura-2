@@ -1,0 +1,73 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100vw - 20px*2);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    background-image: linear-gradient(90deg, rgb(201, 87, 106),rgb(41, 41, 187));
+    color: var(--contrast-color);
+    transition: .2s;
+}
+
+footer.gone {
+    transition: .2s;
+    transform: translateY(100%);
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+footer h1 {
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+footer a {
+    text-decoration: none;
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    font-weight: bolder;
+    background-color: var(--contrast-color);
+    color: var(--contrast-of-contrast-color);
+    padding: 15px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+footer a:hover span{
+    top: 15px;
+    transition: .2s;
+}
+
+footer a span {
+    display: block;
+    position: absolute;
+    left: 15px;
+    width: 100%;
+    top: -100px;
+    transition: .2s;
+}
+
+footer a::before {
+    content: "Inscreva-se gratis";
+    font-weight: bold;
+    position: relative;
+    bottom: 0;
+    transition: .2s;    
+}
+
+footer a:hover::before {
+    bottom: -100px;
+    transition: .2s;
+}
