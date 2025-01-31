@@ -18,9 +18,9 @@ export default function SideBar() {
 
     return (
         <>
-            <div className="hamburguer" ref={hamburguer}>
+            <button className="hamburguer" ref={hamburguer}>
                 {hamburguerAppereance}
-            </div>
+            </button>
             <div className="sidebar" ref={menu}>
                 <nav className="sidebar__navigation">
                     <div>
