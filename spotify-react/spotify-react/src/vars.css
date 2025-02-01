@@ -23,10 +23,9 @@ body {
 
 main{
     max-width: calc(100vw - 300px - 30px - 12px);
-    height: calc(100vh - 12px*2);
+    height: calc(100vh - 24px);
     margin-left: calc(300px + 30px);
     margin-top: 12px;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 10px;

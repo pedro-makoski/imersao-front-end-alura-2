@@ -7,7 +7,7 @@ function getDataSaudation() {
     const hour = date.getHours()
 
     if(hour <= 12){
-        return "Bom dinha"
+        return "Bom dia"
     } else if(hour < 18) {
         return "Boa tarde"
     } else {

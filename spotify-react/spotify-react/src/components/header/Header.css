@@ -8,7 +8,6 @@
     padding: 16px;
     background-color: var(--primary-color);
     border-radius: 12px;
-    height: fit-content;
 }
 
 .search-bar__navigation-and-search {

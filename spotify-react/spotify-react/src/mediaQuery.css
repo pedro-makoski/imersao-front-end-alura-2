@@ -15,14 +15,11 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .hamburguer:hover {
     background-color: var(--contrast-color);
-}
-
-.hamburguer span.fa-x {
-    font-family: var(--font-main);
 }
 
 @media screen and (max-width: 1058px){
@@ -31,9 +28,23 @@
     }   
 
     .sidebar {
+        margin: 10px 0 10px 10px;
+        height: fit-content;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.232);
+        padding: 0;
+        overflow: hidden;
         z-index: 4;
-        transform: translateX(-100%);
+        transform: translateX(calc(-100% - 10px));
         transition: .2s;
+    }
+
+    .biblioteca {
+        margin-top: 0;
+    }
+
+    .sidebar__navigation {
+        border-radius: 0;
     }
 
     .sidebar.appear {
@@ -63,9 +74,5 @@
 
     .nav__search input {
         width: calc(90vw - 120px);
-    }
-
-    .content {
-        height: 100%;
     }
 }

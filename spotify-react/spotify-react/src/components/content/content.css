@@ -1,10 +1,11 @@
 .content {
-    height: calc(100% - 80px - 10px);
+    flex-grow: 1;
     border-radius: 8px;
     background-color: var(--primary-color);   
     display: flex;
     flex-direction: column;
     color: var(--contrast-color);
+    min-height: 0;
 }
 
 .saudacao {
@@ -26,6 +27,7 @@
 }
 
 .content .cards {
+    min-height: 0;
     padding: 20px;
     overflow: auto;
     display: grid;
@@ -58,53 +60,6 @@
     color: var(--contrast-color);
     padding: 20px;
 }
-
-.card-number-1 {
-    background-color: rgb(162, 34, 34);
-}
-.card-number-2 {
-    background-color:rgb(0, 73, 106);
-}
-.card-number-3 {
-    background-color:rgb(0, 0, 160);
-}
-.card-number-4 {
-    background-color:rgb(0, 0, 160);
-}
-.card-number-5 {
-    background-color:rgb(45, 66, 98);
-}
-.card-number-6 {
-    background-color:rgb(83, 37, 37);
-}
-.card-number-7 {
-    background-color:rgb(92, 0, 205);
-}
-.card-number-8 {
-    background-color:rgb(59, 0, 0);
-}
-.card-number-9 {
-    background-color:rgb(47, 111, 66);
-}
-.card-number-10 {
-    background-color:rgb(170, 170, 41);
-}
-.card-number-11 {
-    background-color:rgb(115, 115, 115);
-}
-.card-number-12 {
-    background-color:rgb(41, 41, 41);
-}
-.card-number-13 {
-    background-color:rgb(179, 0, 90);
-}
-.card-number-14{
-    background-color:rgb(73, 109, 121);
-}
-.card-number-15{
-    background-color:rgb(73, 16, 247);
-}
-
 
 .content .cards .card:not(.artist) div img {
     position: absolute;
