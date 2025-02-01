@@ -36,7 +36,7 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    border-radius: 20px;
+    border-radius: 11px;
     outline: 0 solid var(--secondary-color);
     padding: 10px;
 }
@@ -113,13 +113,13 @@
     transition: .2s;
 }
 
-.create-playlist .fa, .create-podcast .fa {
+.create-playlist span, .create-podcast span {
     position: relative;
-    z-index: 1000;
+    z-index: 5;
     transition: .2s;
 }
 
-.create-playlist:hover .fa, .create-podcast:hover .fa {
+.create-playlist:hover span, .create-podcast:hover span {
     color: var(--contrast-color);
     transition: .2s;
 }
@@ -200,13 +200,13 @@
     transition: .2s;
 }
 
-.biblioteca .configs .languages .fa {
+.biblioteca .configs .languages span, .biblioteca .configs .languages .fa{
     position: relative;
     z-index: 1000;
     transition: .2s;
 }
 
-.biblioteca .configs .languages:hover .fa {
+.biblioteca .configs .languages:hover span, .biblioteca .configs .languages:hover .fa{
     color: var(--contrast-color);
     transition: .2s;
 }

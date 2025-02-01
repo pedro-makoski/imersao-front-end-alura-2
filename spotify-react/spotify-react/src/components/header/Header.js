@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import '../reset.css'
 import './Header.css';
 
@@ -7,8 +7,11 @@ import smallLeft from '../assets/icons/small-left.png'
 import smallRight from '../assets/icons/small-right.png'
 import lupaImg from '../assets/icons/search.png'
 
+let inputValue = ""
 
-export default function Header() {
+function Header({changeInputFunction}) {
+    const inputElement = useRef(null)
+
     return (
         <section className="search-bar">
             <nav>
@@ -19,7 +22,7 @@ export default function Header() {
                     </div>
                     <div className="nav__search">
                         <img src={lupaImg} alt="" />
-                        <input type="text" id="search-input" name="search-input" maxLength="800" placeholder="O que você quer ouvir?" />
+                        <input type="text" id="search-input" name="search-input" maxLength="800" placeholder="O que você quer ouvir?" onInput={()=> {changeInputFunction(inputElement.current.value)}} ref={inputElement} autoComplete="off"/>
                     </div>
                 </div>
                 <div className="nav__login">
@@ -30,3 +33,5 @@ export default function Header() {
         </section>
     )
 }
+
+export {inputValue, Header}
