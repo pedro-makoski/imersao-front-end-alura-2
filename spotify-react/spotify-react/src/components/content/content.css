@@ -6,6 +6,11 @@
     flex-direction: column;
     color: var(--contrast-color);
     min-height: 0;
+    overflow: auto;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
 }
 
 .saudacao {
@@ -68,7 +73,6 @@
 }
 
 .content .cards .card {
-    flex-grow: 1;
     width:200px;
     height: 200px;
     overflow: hidden;

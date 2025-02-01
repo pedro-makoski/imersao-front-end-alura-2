@@ -33,10 +33,11 @@
         border-radius: 20px;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.232);
         padding: 0;
-        overflow: hidden;
+        overflow: auto;
         z-index: 4;
         transform: translateX(calc(-100% - 10px));
         transition: .2s;
+        max-height: 100vh;
     }
 
     .biblioteca {
@@ -74,5 +75,9 @@
 
     .nav__search input {
         width: calc(90vw - 120px);
+    }
+
+    .content .cards .card {
+        flex-grow: 1;
     }
 }
